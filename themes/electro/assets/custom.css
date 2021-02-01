@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     font-size: 16px;
     }
@@ -32,4 +33,12 @@
 
 .paleblue {
     background-color: paleturquoise;
+=======
+.site-footer {
+    height: 6rem;
+}
+
+.pink {
+    background-color: pink;
+>>>>>>> footer
 }
