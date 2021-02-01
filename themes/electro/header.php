@@ -26,6 +26,17 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'electro' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div class="account-header grid-x red">
+			<div class="account-info cell large-2 large-offset-3 pink">Account Info</div>
+		</div>
+		<div class="logo-header grid-x blue align-middle">
+			<div class="logo cell large-2 paleblue">Logo</div>
+			<div class="search cell large-5 large-offset-2 paleblue">Search</div>
+			<div class="cart cell large-2 large-offset-1 paleblue">Cart</div>
+		</div>
+		<div class="category-header grid-x align-center pink">
+			<div class="categories cell large-8 red"></div>
+		</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
