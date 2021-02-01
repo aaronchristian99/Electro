@@ -1,3 +1,7 @@
-.site-header, .site-footer {
-    background-color: black;
+.site-footer {
+    height: 6rem;
+}
+
+.pink {
+    background-color: pink;
 }
