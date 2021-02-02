@@ -43,14 +43,24 @@
 		</div>
 		<div class="logo-header grid-x blue align-middle">
 			<div class="logo cell large-2 paleblue">
-				<?php
-				the_custom_logo();
-				?>
+				<?php the_custom_logo(); ?>
 			</div>
 			<div class="search cell large-5 large-offset-2 paleblue">Search</div>
 			<div class="cart cell large-2 large-offset-1 paleblue">Cart</div>
 		</div>
 		<div class="category-header grid-x align-center pink">
-			<div class="categories cell large-8 red"></div>
+			<div class="categories cell large-8 red">
+			<nav id="category-navigation" class="main-navigation">
+					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'electro' ); ?></button>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-secondary',
+								'menu_id'        => 'secondary-menu',
+							)
+						);
+						?>
+				</nav><!-- #category-navigation -->
+			</div>
 		</div>
 	</header><!-- #masthead -->

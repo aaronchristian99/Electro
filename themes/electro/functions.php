@@ -51,6 +51,7 @@ if ( ! function_exists( 'electro_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-primary' => esc_html__( 'Primary', 'electro' ),
+				'menu-secondary' => esc_html__( 'Seconary', 'electro' ),
 			)
 		);
 
