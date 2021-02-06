@@ -1,0 +1,191 @@
+@import url("https://use.typekit.net/uti4wyh.css");
+
+:root {
+    font-size: 16px;
+}
+
+.entry-content p {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.entry-content h1 {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    font-size: 2rem;
+}
+.entry-content h2 {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.entry-content h3 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.0rem;
+}
+
+.entry-content h4 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.entry-content h5 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 0.6rem;
+}
+
+.entry-content h6 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 0.5rem;
+}
+
+.entry-title {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    color: #003da6;
+}
+
+.entry-title a:visited {
+    color: #003da6;
+}
+
+.entry-content ul li, .entry-content ol li {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.is-style-default {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.wp-block-code code {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.wp-block-preformatted {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.wp-block-pullquote, .is-style-default {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.5rem;
+    border-color: #0046be;
+}
+
+.wp-block-pullquote, .is-style-solid-colour {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: #0046be;
+}
+
+.wp-block-table, .is-style-stripes {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.wp-block-verse {
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.size-full {
+    width: 100%;
+    height: auto;
+}
+
+.size-large {
+    width: 530px;
+    height: 600px;
+}
+
+.size-medium {
+    width: 180px;
+    height: 200px;
+}
+
+.size-thumbnail {
+    width: 150px;
+    height: 150px;
+}
+
+.is-style-outline, .is-style-fill {
+    height: 50px;
+    border: 2px solid #003da6;
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #003da6;
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.is-style-fill {
+    border-radius: 0;
+    color: #fff;
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.is-style-outline .wp-block-button__link, .is-style-fill .wp-block-button__link {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    background-color: #003da6;
+}

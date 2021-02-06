@@ -174,3 +174,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Enqueue Block Assets Editor
+ */
+
+function electro_enqueue_block_assets() {
+	wp_enqueue_style('block-style', get_template_directory_uri() . '/assets/css/block-editor.css');
+}
+
+add_action('enqueue_block_assets', 'electro_enqueue_block_assets');
