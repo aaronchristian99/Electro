@@ -42,16 +42,21 @@
 			</div>
 		</div>
 		<div class="logo-header grid-x align-middle">
-			<div class="logo cell large-2">
+			<div class="logo cell large-1 large-offset-1">
 				<?php the_custom_logo(); ?>
 			</div>
 			<div class="search cell large-4 large-offset-2">
 				<input type="input" id="search">
 				<div id="search-icon">
-				<img src="<?php echo get_template_directory_uri();?>/assets/img/search_logo.png">
+					<img src="<?php echo get_template_directory_uri();?>/assets/img/search_logo.png">
 				</div>
 			</div>
-			<div class="cart cell large-2 large-offset-1">Cart</div>
+			<div class="cart cell large-1 large-offset-2">
+				<div class="cart-icon pink">
+					<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
+					<div class="cart-count">0</div>
+				</div>
+			</div>
 		</div>
 		<div class="category-header grid-x align-center">
 			<div class="categories cell large-8">

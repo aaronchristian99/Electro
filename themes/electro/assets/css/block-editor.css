@@ -4,7 +4,7 @@
     font-size: 16px;
 }
 
-.entry-content p {
+.entry-content p, .editor-styles-wrapper p {
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -12,14 +12,14 @@
     font-size: 1rem;
 }
 
-.entry-content h1 {
+.entry-content h1, .editor-styles-wrapper h1 {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
     text-align: left;
     font-size: 2rem;
 }
-.entry-content h2 {
+.entry-content h2, .editor-styles-wrapper h2 {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -27,7 +27,7 @@
     font-size: 1.2rem;
 }
 
-.entry-content h3 {
+.entry-content h3, .editor-styles-wrapper h3 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -35,7 +35,7 @@
     font-size: 1.0rem;
 }
 
-.entry-content h4 {
+.entry-content h4, .editor-styles-wrapper h4 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -43,7 +43,7 @@
     font-size: 0.8rem;
 }
 
-.entry-content h5 {
+.entry-content h5, .editor-styles-wrapper h5 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -51,7 +51,7 @@
     font-size: 0.6rem;
 }
 
-.entry-content h6 {
+.entry-content h6, .editor-styles-wrapper h6 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -59,7 +59,7 @@
     font-size: 0.5rem;
 }
 
-.entry-title {
+.entry-title, .editor-post-title .editor-post-title__input {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -146,16 +146,19 @@
 .size-large {
     width: 530px;
     height: 600px;
+    object-fit: cover;
 }
 
 .size-medium {
     width: 180px;
     height: 200px;
+    object-fit: cover;
 }
 
 .size-thumbnail {
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
 .is-style-outline, .is-style-fill {
@@ -164,7 +167,6 @@
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-align: left;
     font-size: 0.9rem;
     color: #003da6;
     border-radius: 0;
@@ -177,7 +179,6 @@
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
-    text-align: left;
     font-size: 1rem;
     margin-bottom: 0px;
     border: none;
@@ -188,4 +189,45 @@
     border-radius: 0;
     margin-bottom: 0px;
     background-color: #003da6;
+}
+
+.wp-block-cover p {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.wp-block-file .wp-block-file__button {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #003da6;
+    border-radius: 0;
+    color: #fff;
+}
+
+.has-huge-font {
+    font-size: 4rem;
+}
+
+.has-large-font {
+    font-size: 3rem;
+}
+
+.has-medium-font {
+    font-size: 2rem;
+}
+
+.has-normal-font {
+    font-size: 1.5rem;
+}
+
+.has-small-font {
+    font-size: 0.5rem;
+}
+
+.has-defaut-font {
+    font-size: 1rem;
 }
