@@ -72,7 +72,7 @@
     color: #003da6;
 }
 
-.entry-content ul li, .entry-content ol li {
+.entry-content ul li, .entry-content ol li, .editor-styles-wrapper ul li, .editor-styles-wrapper ol li {
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -80,16 +80,21 @@
     font-size: 1rem;
 }
 
-.is-style-default {
+.wp-block-quote.is-style-default p {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
     text-align: left;
     font-size: 1.2rem;
+    color: #000;
 }
 
-.wp-block-code code {
-    font-family: montserrat,sans-serif;
+.wp-block-quote cite {
+    font-style: normal;
+}
+
+.wp-block-code code, .editor-styles-wrapper code, .editor-styles-wrapper kbd {
+    font-family: montserrat,sans-serif !important;
     font-weight: 300;
     font-style: normal;
     text-align: left;
@@ -104,25 +109,55 @@
     font-size: 1rem;
 }
 
-.wp-block-pullquote, .is-style-default {
+.wp-block-pullquote:not(.is-style-solid-color) {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
     text-align: left;
     font-size: 1.5rem;
-    border-color: #0046be;
+    border-top: 2px solid #0046be;
+    border-bottom: 2px solid #0046be;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.wp-block-pullquote, .is-style-solid-colour {
+.wp-block-pullquote:not(.is-style-solid-color) p {
+    font-size: 2.5rem;
+    color: #000 !important;
+}
+
+.wp-block-pullquote:not(.is-style-solid-color) cite {
+    color: #000 !important;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.wp-block-pullquote.is-style-solid-color {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
     text-align: left;
     font-size: 1.5rem;
-    background-color: #0046be;
+    background-color: #0046be !important;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.wp-block-table, .is-style-stripes {
+.wp-block-pullquote.is-style-solid-color p {
+    font-size: 2.5rem;
+    color: #fff !important;
+}
+
+.wp-block-pullquote.is-style-solid-color cite {
+    color: #fff !important;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.wp-block-table.is-style-regular {
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -131,11 +166,13 @@
 }
 
 .wp-block-verse {
-    font-family: montserrat, sans-serif;
+    font-family: montserrat, sans-serif !important;
     font-weight: 300;
     font-style: normal;
     text-align: left;
     font-size: 1.5rem;
+    background-color: #0046be;
+    color: #fff !important;
 }
 
 .size-full {
@@ -230,4 +267,9 @@
 
 .has-defaut-font {
     font-size: 1rem;
+}
+
+.wp-block-seperator.is-style-wide, hr {
+        width: 100%;
+    border-bottom: 1px solid #003da6;
 }

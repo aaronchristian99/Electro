@@ -24,6 +24,7 @@
 #primary-menu li {
     line-height: 3rem;
     color: #fff;
+    margin-right: 20px;
 }
 
 #primary-menu li a {
@@ -88,7 +89,52 @@
     background-color: #fff;
 }
 
+.slider {
+    height: 325px;
+}
+
+.weekly-deals {
+    margin-top: 50px;
+}
+
+.item-container {
+    height: 490px;
+    padding: 12px;
+    margin-right: 20px;
+}
+
+.item-img {
+    height: 200px;
+}
+
+.item-info {
+    height: 260px;
+}
+
 .site-footer {
     height: 6rem;
     background-color: #003da6;
+}
+
+.site-info {
+    margin: auto;
+}
+
+.site-info, .site-info .sep {
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 6rem;
+}
+
+.red {
+    background-color: red;
+}
+
+.darkgrey {
+    background-color: grey;
 }
