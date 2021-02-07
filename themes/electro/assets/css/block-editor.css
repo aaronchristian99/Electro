@@ -269,7 +269,7 @@
     font-size: 1rem;
 }
 
-.wp-block-seperator.is-style-wide, hr {
-        width: 100%;
+.wp-block-separator.is-style-wide, hr {
+    max-width: 100%;
     border-bottom: 1px solid #003da6;
 }
