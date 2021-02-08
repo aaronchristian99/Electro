@@ -1,8 +1,9 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: Contact
+ * The template for displaying about page
  *
- * This is the template that displays all pages by default.
+ * This is the template that displays about page by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
  * different template.
@@ -61,5 +62,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

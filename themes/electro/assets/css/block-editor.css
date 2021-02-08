@@ -182,7 +182,8 @@
 
 .size-large {
     width: 530px;
-    height: 600px;
+    /* height: 600px; */
+    height: auto;
     object-fit: cover;
 }
 

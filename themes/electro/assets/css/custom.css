@@ -2,6 +2,10 @@
     font-size: 16px;
 }
 
+.post, .page {
+    margin-bottom: 0px;
+}
+
 .account-header, .account-info {
     height: 3rem;
     background-color: #0046be;
@@ -95,6 +99,10 @@
 
 .weekly-deals {
     margin-top: 50px;
+}
+
+.weekly-deals .entry-title {
+    margin-bottom: 50px;
 }
 
 .item-container {
