@@ -52,10 +52,12 @@
 				</div>
 			</div>
 			<div class="cart cell large-1 large-offset-2">
-				<div class="cart-icon pink">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
-					<div class="cart-count">0</div>
-				</div>
+				<a href="http://electro.local/cart/">
+					<div class="cart-icon pink">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
+						<div class="cart-count">0</div>
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="category-header grid-x align-center">
