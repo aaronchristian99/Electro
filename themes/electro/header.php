@@ -52,14 +52,16 @@
 				</div>
 			</div>
 			<div class="cart cell large-1 large-offset-2">
-				<div class="cart-icon pink">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
-					<div class="cart-count">0</div>
-				</div>
+				<a href="http://electro.local/cart/">
+					<div class="cart-icon pink">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
+						<div class="cart-count">0</div>
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="category-header grid-x align-center">
-			<div class="categories cell large-8 red">
+			<div class="categories cell large-8">
 			<nav id="category-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'electro' ); ?></button>
 						<?php
