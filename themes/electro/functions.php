@@ -73,16 +73,16 @@ if ( ! function_exists( 'electro_setup' ) ) :
 		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'electro_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+		// add_theme_support(
+		// 	'custom-background',
+		// 	apply_filters(
+		// 		'electro_custom_background_args',
+		// 		array(
+		// 			'default-color' => 'ffffff',
+		// 			'default-image' => '',
+		// 		)
+		// 	)
+		// );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -125,8 +125,8 @@ add_action( 'after_setup_theme', 'electro_content_width', 0 );
 function electro_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'electro' ),
-			'id'            => 'sidebar',
+			'name'          => esc_html__( 'Sidebar-1', 'electro' ),
+			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'electro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

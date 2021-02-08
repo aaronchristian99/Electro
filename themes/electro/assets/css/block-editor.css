@@ -4,11 +4,15 @@
     font-size: 16px;
 }
 
+.is-align-center {
+    text-align: center;
+}
+
 .entry-content p, .editor-styles-wrapper p {
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 1rem;
 }
 
@@ -16,14 +20,14 @@
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-align: left;
-    font-size: 2rem;
+    /* text-align: left; */
+    font-size: 4rem;
 }
 .entry-content h2, .editor-styles-wrapper h2 {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 1.2rem;
 }
 
@@ -31,7 +35,7 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 1.0rem;
 }
 
@@ -39,7 +43,7 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 0.8rem;
 }
 
@@ -47,7 +51,7 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 0.6rem;
 }
 
@@ -55,7 +59,7 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-align: left;
+    /* text-align: left; */
     font-size: 0.5rem;
 }
 

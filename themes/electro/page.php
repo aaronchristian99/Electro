@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-	<!-- <main id="primary" class="site-main">
-		<section class="slider grid-x red">
+	<main id="primary" class="site-main">
+		<!-- <section class="slider grid-x red">
 			<div class="img-container cell large-12">
 
 			</div>

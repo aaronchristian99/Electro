@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: About
- * The template for displaying about page
+ * Template Name: Home
+ * The template for displaying home page
  *
- * This is the template that displays about page by default.
+ * This is the template that displays home page by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
  * different template.
@@ -35,5 +35,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-// get_sidebar('sidebar-1');
+get_sidebar('sidebar-1');
 get_footer();

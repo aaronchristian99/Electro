@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="account-header grid-x">
-			<div class="account-info cell large-4 large-offset-8">
+			<div class="account-info cell large-5 large-offset-7">
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'electro' ); ?></button>
 						<?php
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div class="category-header grid-x align-center">
-			<div class="categories cell large-8">
+			<div class="categories cell large-8 red">
 			<nav id="category-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'electro' ); ?></button>
 						<?php
@@ -67,6 +67,7 @@
 							array(
 								'theme_location' => 'menu-secondary',
 								'menu_id'        => 'secondary-menu',
+								'link_after' => '     |',
 							)
 						);
 						?>
