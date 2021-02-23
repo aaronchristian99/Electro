@@ -46,10 +46,7 @@
 				<?php the_custom_logo(); ?>
 			</div>
 			<div class="search cell large-4 large-offset-2">
-				<input type="input" id="search">
-				<div id="search-icon">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/search_logo.png">
-				</div>
+				<?php echo get_search_form(); ?>
 			</div>
 			<div class="cart cell large-1 large-offset-2">
 				<a href="http://electro.local/cart/">

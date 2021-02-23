@@ -16,34 +16,6 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<!-- <section class="slider grid-x red">
-			<div class="img-container cell large-12">
-
-			</div>
-		</section>
-
-		<section class="grid-container">
-			<div class="weekly-deals grid-x">
-				<div class="entry-title large-12">Weekly Deals</div>
-				<div class="card item-container darkgrey">
-					<div class="item-img grey">Item Image</div>
-					<div class="card-section item-info white">Item Info</div>
-				</div>
-				<div class="card item-container darkgrey">
-					<div class="item-img grey">Item Image</div>
-					<div class="card-section item-info white">Item Info</div>
-				</div>
-				<div class="card item-container darkgrey">
-					<div class="item-img grey">Item Image</div>
-					<div class="card-section item-info white">Item Info</div>
-				</div>
-				<div class="card item-container darkgrey">
-					<div class="item-img grey">Item Image</div>
-					<div class="card-section item-info white">Item Info</div>
-				</div>
-			</div>
-		</section> -->
-
 		<?php
 		while ( have_posts() ) :
 			the_post();

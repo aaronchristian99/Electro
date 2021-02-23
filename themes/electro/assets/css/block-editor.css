@@ -4,6 +4,10 @@
     font-size: 16px;
 }
 
+.wp-block {
+    max-width: 1000px;
+}
+
 .is-align-center {
     text-align: center;
 }
@@ -203,7 +207,7 @@
     object-fit: cover;
 }
 
-.is-style-outline, .is-style-fill {
+.is-style-outline, .is-style-fill, .wp-block-button__link {
     height: 50px;
     border: 2px solid #003da6;
     font-family: montserrat, sans-serif;
@@ -215,7 +219,7 @@
     margin-bottom: 0px;
 }
 
-.is-style-fill {
+.is-style-fill, .wp-block-button__link {
     border-radius: 0;
     color: #fff;
     font-family: montserrat,sans-serif;
