@@ -241,3 +241,54 @@ input[type="image"] {
     font-size: 1rem;
     cursor: pointer;
 }
+
+/* Styling Shop Page */
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, 
+.woocommerce ul.products li.product h3 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color: #000;
+}
+
+.woocommerce ul.products li.product .price {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #003da6;
+}
+
+.woocommerce ul.products li.product .button {
+    width: 180px;
+    height: 50px;
+    background-color: #003da6;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.single-product .entry-title {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #000;
+    text-align: left;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li img {
+    opacity: 1;
+}

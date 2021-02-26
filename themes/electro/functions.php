@@ -188,8 +188,8 @@ add_action('enqueue_block_assets', 'electro_enqueue_block_assets');
  * Enqueuing block editor assets
  */
 
-function sample_theme_enqueue_block_editor_assets() {
-	wp_enqueue_script('editor-script', get_template_directory_uri() . '/assets/js/editor.js', array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'));
-}
+// function sample_theme_enqueue_block_editor_assets() {
+// 	wp_enqueue_script('editor-script', get_template_directory_uri() . '/assets/js/editor.js', array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'));
+// }
 
-add_action('enqueue_block_editor_assets', 'sample_theme_enqueue_block_editor_assets');
+// add_action('enqueue_block_editor_assets', 'sample_theme_enqueue_block_editor_assets');
