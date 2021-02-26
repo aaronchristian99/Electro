@@ -292,3 +292,106 @@ input[type="image"] {
 .woocommerce div.product div.images .flex-control-thumbs li img {
     opacity: 1;
 }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #ff0006;
+    font-size: 1.5rem;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.single-product form {
+    display: block;
+}
+
+.woocommerce div.product form.cart div.quantity, .woocommerce div.product form.cart .button {
+    float: none;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    width: 150px;
+    height: 50px;
+    background-color: #003da6;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    background: #fff;
+    /* border: 1px solid #003da6; */
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    color: #fff;
+    background-color: #0046be;
+}
+
+input[type="number"] {
+    /* border: 1px solid #000; */
+    color: #000;
+    border-radius: 0;
+}
+
+input[type="number"]:focus {
+    box-shadow: none;
+}
+
+.tabs {
+    border: none;
+    background: #fff;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+    color: #003da6;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #003da6;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    background-color: #fff;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #000;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+a:focus {
+    outline: none;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel h2 {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #003da6;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #003da6;
+}
+
+.woocommerce table.shop_attributes {
+    margin-top: 1.5rem;
+}
