@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="grid-container grid-x" <?php post_class(); ?>>
 	<header class="entry-header large-12">
 		<?php
 		if(!is_product()) {

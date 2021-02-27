@@ -54,10 +54,10 @@ body {
     position: relative;
 }
 
-form {
+.search-form, .comment-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 input[type="search"] {
@@ -66,6 +66,10 @@ input[type="search"] {
     color: #000;
     border: none;
     margin-bottom: 0;
+}
+
+#search-form-1 {
+    padding-right: 50px;
 }
 
 input[type="image"] {
@@ -253,17 +257,51 @@ a {
     color: #000;
 }
 
+.entry-title a {
+    color: #003da6;
+}
+
+.author a {
+    color: #003da6;
+    text-decoration: underline;
+}
+
+.author a:hover {
+    text-decoration: none;
+}
+
 a:visited {
     color: #000;
 }
 
-input[type="number"], input[type="text"], input[type="email"], input[type="tel"] {
+a:hover, a:active {
+    outline: none;
+}
+
+input[type="number"], input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
     color: #000;
     border-radius: 0;
 }
 
-input[type="number"]:focus, [type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
+input[type="number"]:focus, [type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, 
+input[type="password"]:focus, input[type="search"]:focus {
     box-shadow: none;
+}
+
+[type="search"]:focus {
+    border: none;
+    background-color: #fff;
+}
+
+.post-thumbnail {
+    margin-top: 2rem;
+}
+
+.more-link {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #003da6;
 }
 
 /* Styling Shop Page */
@@ -585,3 +623,55 @@ a:focus {
     border-radius: 0;
     border-collapse: collapse;
 }
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+    padding: 17px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a {
+    color: #003da6;
+}
+
+.woocommerce-MyAccount-content {
+    margin-top: 20px;
+}
+
+.woocommerce-MyAccount-content p a {
+    color: #003da6;
+}
+
+.woocommerce-MyAccount-content p a:hover {
+    color: #0046be;
+    text-decoration: underline;
+}
+
+.woocommerce-MyAccount-content form {
+    display: block;
+}
+
+.woocommerce-address-fields p .button, .woocommerce-MyAccount-content form p .button{
+    margin-top: 20px;
+}
+
+.lost_password a {
+    color: #003da6;
+    text-decoration: underline;
+}
+
+.lost_password a:hover {
+    text-decoration: none;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    /* border: none; */
+    border-radius: 0;
+}
+
+/* .woocommerce form.login .woocommerce form .form-row input.input-text {
+    width: 50%;
+} */
