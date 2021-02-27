@@ -105,6 +105,11 @@ if ( ! function_exists( 'electro_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'electro_setup' );
 
+function electro_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'electro_add_woocommerce_support' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

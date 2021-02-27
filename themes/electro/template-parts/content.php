@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header large-12">
 		<?php
 		if(!is_product()) {
 			if ( is_singular() ) :
