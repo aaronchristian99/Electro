@@ -60,6 +60,11 @@ body {
     flex-wrap: wrap;
 }
 
+.comment-form {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 input[type="search"] {
     height: 30px;
     border-radius: 0;
@@ -284,7 +289,7 @@ input[type="number"], input[type="text"], input[type="email"], input[type="tel"]
 }
 
 input[type="number"]:focus, [type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, 
-input[type="password"]:focus, input[type="search"]:focus {
+input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
     box-shadow: none;
 }
 
@@ -301,7 +306,80 @@ input[type="password"]:focus, input[type="search"]:focus {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
+    text-decoration: underline;
     color: #003da6;
+}
+
+.more-link a {
+    text-decoration: none;
+}
+
+.cat-links a, .tags-links a {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    color: #003da6;
+}
+
+.tags-links {
+    margin-left: 20px;
+}
+
+.cat-links a:hover, .tags-links a:hover {
+    text-decoration: none;
+}
+
+.entry-footer {
+    margin-top: 20px;
+}
+
+.comments-link {
+    display: none;
+}
+
+.post-edit-link {
+    display: block;
+    margin-top: 15px;
+}
+
+.posts-navigation .nav-links, .post-navigation .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.posts-navigation .nav-next, .posts-navigation .nav-previous {
+    text-align: left;
+    flex: 0 0 12%;
+}
+
+.post-navigation .nav-previous, .post-navigation .nav-next {
+    text-align: left;
+    flex: 0 0 49%;
+}
+
+.posts-navigation .nav-next a, .posts-navigation .nav-previous a, .post-navigation .nav-previous a, .post-navigation .nav-next a {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #003da6;
+}
+
+.posts-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, 
+.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover {
+    text-decoration: underline;
+}
+
+.logged-in-as a:last-child {
+    color: #003da6;
+}
+
+.comment-form-comment textarea {
+    resize: none;
 }
 
 /* Styling Shop Page */
