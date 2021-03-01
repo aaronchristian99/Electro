@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.entry-content p, .editor-styles-wrapper p {
+.entry-content p, .editor-styles-wrapper p, p {
     font-family: montserrat,sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -20,14 +20,14 @@
     font-size: 1rem;
 }
 
-.entry-content h1, .editor-styles-wrapper h1 {
+.entry-content h1, .editor-styles-wrapper h1, h1 {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
     /* text-align: left; */
     font-size: 4rem;
 }
-.entry-content h2, .editor-styles-wrapper h2 {
+.entry-content h2, .editor-styles-wrapper h2, h2 {
     font-family: montserrat, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -35,7 +35,7 @@
     font-size: 1.2rem;
 }
 
-.entry-content h3, .editor-styles-wrapper h3 {
+.entry-content h3, .editor-styles-wrapper h3, h3 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -43,7 +43,7 @@
     font-size: 1.0rem;
 }
 
-.entry-content h4, .editor-styles-wrapper h4 {
+.entry-content h4, .editor-styles-wrapper h4, h4 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -51,7 +51,7 @@
     font-size: 0.8rem;
 }
 
-.entry-content h5, .editor-styles-wrapper h5 {
+.entry-content h5, .editor-styles-wrapper h5, h5 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -59,7 +59,7 @@
     font-size: 0.6rem;
 }
 
-.entry-content h6, .editor-styles-wrapper h6 {
+.entry-content h6, .editor-styles-wrapper h6, h6 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;

@@ -110,6 +110,13 @@ function electro_add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'electro_add_woocommerce_support' );
 
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' &gt; ';
+	return $defaults;
+}
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
