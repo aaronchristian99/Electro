@@ -157,6 +157,7 @@ function electro_scripts() {
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . './assets/css/vendor/foundation.css', array() );
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . './assets/js/vendor/foundation.js');
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . './assets/css/custom.css', array() );
+	wp_enqueue_style( 'font-style', "https://use.typekit.net/uti4wyh.css" );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

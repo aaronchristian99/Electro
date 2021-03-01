@@ -52,13 +52,15 @@
 				<a href="http://electro.local/cart/">
 					<div class="cart-icon pink">
 						<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
-						<div class="cart-count">0</div>
+						<div class="cart-count">
+							<?php echo WC()->cart->get_cart_contents_count() ?>
+						</div>
 					</div>
 				</a>
 			</div>
 		</div>
 		<div class="category-header grid-x align-center">
-			<div class="categories cell large-8">
+			<div class="categories cell large-6">
 			<nav id="category-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'electro' ); ?></button>
 						<?php

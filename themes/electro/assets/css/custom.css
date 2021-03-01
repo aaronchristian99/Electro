@@ -421,13 +421,18 @@ input[type="search"]:focus {
 .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, 
 .woocommerce ul.products li.product h3 {
     font-family: montserrat, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     font-size: 1rem;
     color: #000;
 }
 
-.woocommerce ul.products li.product .price {
+.woocommerce ul.products li.product .woocommerce-loop-category__title:hover, .woocommerce ul.products li.product .woocommerce-loop-product__title:hover, 
+.woocommerce ul.products li.product h3:hover {
+    text-decoration: underline;
+}
+
+.woocommerce ul.products li.product .price, .wc-block-grid__product .wc-block-grid__product-price {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -586,7 +591,7 @@ a:focus {
     width: 150px;
 }
 
-.woocommerce button.button {
+.woocommerce button.button, .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
     width: 150px;
     height: 40px;
     background-color: #003da6;
@@ -812,12 +817,54 @@ a:focus {
 .content-area #main .woocommerce-products-header h1, .woocommerce-products-header__title .page-title {
     text-align: center;
     font-family: montserrat, sans-serif !important;
-    font-weight: 500;
+    font-weight: 900;
     font-style: normal;
     font-size: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    color: #003da6;
 }
 
 .woocommerce .woocommerce-ordering {
     margin-left: 20px;
+}
+
+.woocommerce ul.products li.product .price ins {
+    font-weight: 500;
+}
+
+.woocommerce span.onsale {
+    background-color: #ff0006;
+    font-weight: 500;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    margin-right: 40px;
+    margin-bottom: 3.992em;
+}
+
+.woocommerce ul.products li.last, .woocommerce-page ul.products li.last {
+    margin-right: 0;
+}
+
+.woocommerce .products ul, .woocommerce ul.products {
+    margin-top: 10rem;
+}
+
+mark, ins {
+    background-color: transparent;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, 
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: #003da6;
+    color: #fff;
+}
+
+.wc-block-grid__product-onsale {
+    border: 1px solid #ff0006;
+}
+
+.wc-block-grid__product-onsale {
+    font-weight: 500;
+    color: #ff0006;
 }
