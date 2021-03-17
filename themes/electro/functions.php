@@ -186,6 +186,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/woocommerce.php';
 
 /**
+ * Custom POst Type
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
  * Enqueue Block Assets Editor
  */
 

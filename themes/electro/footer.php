@@ -13,10 +13,10 @@
 
 	<footer id="colophon" class="site-footer grid-x">
 		<div class="site-info">
-			<span class="sep"> &copy;</span>
+			<span class="sep"> &copy; <?php echo gmdate('Y') ?></span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf('Electro 2021' );
+				printf('Electro' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
