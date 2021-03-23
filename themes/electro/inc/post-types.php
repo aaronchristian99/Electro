@@ -39,13 +39,13 @@ function electro_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'computer and laptop' ),
+        'rewrite'            => array( 'slug' => 'computers-and-laptops' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
-        'taxonomies'         => array( 'category', 'post_tag' ),
+        // 'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
     );
     register_post_type( 'computer_and_laptop', $args );

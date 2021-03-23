@@ -7,6 +7,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 .post, .page {
@@ -867,4 +868,29 @@ mark, ins {
 .wc-block-grid__product-onsale {
     font-weight: 500;
     color: #ff0006;
+}
+
+
+/* WooCommerce Blocks Hand Picket products */
+
+.wc-block-grid__products .wc-block-grid__product-image img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    text-align: center;
+}
+
+.wc-block-grid__product .wc-block-grid__product-image, .wc-block-grid__product .wc-block-grid__product-title, 
+.wc-block-grid__product .wc-block-grid__product-price, .wc-block-grid__product .wc-block-grid__product-add-to-cart {
+    padding: 0 1.2rem;
+}
+
+.woocommerce span.onsale, .wc-block-grid__product-onsale {
+    display:none;
+}
+
+/* WP Custom Query Styling */
+
+.custom_query_posts {
+    margin: 3rem 1rem;
 }
