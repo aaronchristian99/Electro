@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="grid-container grid-x" <?php post_class(); ?>>
-	<header class="entry-header large-12">
+<article id="post-<?php the_ID(); ?>" class="large-12 small-12 medium-12" <?php post_class(); ?>>
+	<header class="entry-header">
 		<?php
 		if(!is_product()) {
 			if ( is_singular() ) :
