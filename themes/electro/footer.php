@@ -25,7 +25,7 @@
 	$computerandlaptop_query = new WP_Query($computerandlaptop_args);
 
 ?>
-	<div class="grid-x grid-margin-x custom_query_posts align-center">
+	<div class="grid-x grid-margin-x custom-query-posts align-center align-spaced">
 		<?php
 
 		/**
@@ -36,13 +36,14 @@
 				while($computerandlaptop_query->have_posts()) {
 					$computerandlaptop_query->the_post();
 					?>
-						<div class="cell large-4 medium-4 small-4">
+						<div class="cell large-3 medium-3 small-12">
 							<div class="card">
-								<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+								<img class="query-imgs" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 							</div>
 							<div class="card-section">
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
+								<p><a href="<?php the_permalink(); ?>">Go to Post ></a></p>
 							</div>
 						</div>
 				<?php
