@@ -10,6 +10,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Styling Header */
+
+.main-navigation ul {
+    justify-content: center;
+}
+
+/* Styling WordPress Blocks */
+
 .post, .page {
     margin-bottom: 0px;
 }
@@ -421,7 +429,7 @@ input[type="search"]:focus {
     resize: none;
 }
 
-/* Styling Shop Page */
+/* Styling Woo Commerce Page */
 
 .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, 
 .woocommerce ul.products li.product h3 {
