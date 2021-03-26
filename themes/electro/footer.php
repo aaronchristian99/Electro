@@ -11,12 +11,60 @@
 
 ?>
 
+<?php
+
+/**
+ * Wordpress WP Custom Query
+ */
+
+	$computerandlaptop_args = array(
+		'post_type' => 'computer_and_laptop',
+		'posts_per_page' => 3
+	);
+
+	$computerandlaptop_query = new WP_Query($computerandlaptop_args);
+
+	if(is_front_page()) {
+
+	?>
+		<div class="grid-x grid-margin-x custom-query-posts align-center align-spaced">
+		<?php
+
+		/**
+		 * Showing 3 posts using WP Custom Query
+		 */
+
+			if($computerandlaptop_query->have_posts()) {
+				while($computerandlaptop_query->have_posts()) {
+					$computerandlaptop_query->the_post();
+					?>
+						<div class="cell large-3 medium-3 small-12">
+							<div class="card">
+								<img class="query-imgs" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+							</div>
+							<div class="card-section">
+								<h3><?php the_title(); ?></h3>
+								<p><?php the_excerpt(); ?></p>
+								<p><a href="<?php the_permalink(); ?>">Go to Post ></a></p>
+							</div>
+						</div>
+				<?php
+				}
+			}
+		?>
+	</div>
+	<?php
+
+	}
+
+?>
+
 	<footer id="colophon" class="site-footer grid-x">
 		<div class="site-info">
-			<span class="sep"> &copy;</span>
+			<span class="sep"> &copy; <?php echo gmdate('Y') ?></span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf('Electro 2021' );
+				echo get_bloginfo( 'name' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="account-header grid-x">
-			<div class="account-info cell large-5 large-offset-7">
+			<div class="account-info cell large-11 align-justify small-3 medium-3">
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'electro' ); ?></button>
 						<?php
@@ -35,33 +35,40 @@
 							array(
 								'theme_location' => 'menu-primary',
 								'menu_id'        => 'primary-menu',
+								'menu_class'        => 'float-right',
 							)
 						);
 						?>
 				</nav><!-- #site-navigation -->
 			</div>
 		</div>
-		<div class="logo-header grid-x align-middle">
-			<div class="logo cell large-1 large-offset-1">
+		<div class="logo-header grid-x align-middle align-spaced">
+			<div class="logo cell large-1 small-2 medium-1">
 				<?php the_custom_logo(); ?>
 			</div>
-			<div class="search cell large-4 large-offset-2">
-				<input type="input" id="search">
-				<div id="search-icon">
-					<img src="<?php echo get_template_directory_uri();?>/assets/img/search_logo.png">
-				</div>
+			<div class="search cell large-4 medium-4 small-4">
+				<?php echo get_search_form(); ?>
 			</div>
-			<div class="cart cell large-1 large-offset-2">
-				<a href="http://electro.local/cart/">
-					<div class="cart-icon pink">
+			<div class="cart cell large-1 small-2 medium-1">
+			<?php 
+				/**
+				 * Retreiving WooCommerce Cart URL
+				 */
+				$cart_page_id = wc_get_page_id( 'cart' );
+				$cart_page_url = $cart_page_id ? get_permalink( $cart_page_id ) : '';
+			?>
+				<a href="<?php echo $cart_page_url ?>">
+					<div class="cart-icon">
 						<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
-						<div class="cart-count">0</div>
+						<div class="cart-count">
+							<?php echo WC()->cart->get_cart_contents_count() ?>
+						</div>
 					</div>
 				</a>
 			</div>
 		</div>
 		<div class="category-header grid-x align-center">
-			<div class="categories cell large-8">
+			<div class="categories cell large-8 medium-8 small-12">
 			<nav id="category-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'electro' ); ?></button>
 						<?php
