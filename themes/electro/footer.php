@@ -24,8 +24,10 @@
 
 	$computerandlaptop_query = new WP_Query($computerandlaptop_args);
 
-?>
-	<div class="grid-x grid-margin-x custom-query-posts align-center align-spaced">
+	if(is_front_page()) {
+
+	?>
+		<div class="grid-x grid-margin-x custom-query-posts align-center align-spaced">
 		<?php
 
 		/**
@@ -51,13 +53,18 @@
 			}
 		?>
 	</div>
+	<?php
+
+	}
+
+?>
 
 	<footer id="colophon" class="site-footer grid-x">
 		<div class="site-info">
 			<span class="sep"> &copy; <?php echo gmdate('Y') ?></span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf('Electro' );
+				echo get_bloginfo( 'name' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

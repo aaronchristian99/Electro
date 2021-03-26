@@ -345,7 +345,7 @@ input[type="search"]:focus {
     background-color: #fff;
 }
 
-.post-thumbnail {
+.post-thumbnail img {
     margin-top: 2rem;
 }
 
@@ -393,14 +393,15 @@ input[type="search"]:focus {
 .posts-navigation .nav-links, .post-navigation .nav-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
 
 .posts-navigation .nav-next, .posts-navigation .nav-previous {
     text-align: left;
-    flex: 0 0 12%;
+    flex: none;
+    margin: 1rem 6rem;
 }
 
 .post-navigation .nav-previous, .post-navigation .nav-next {

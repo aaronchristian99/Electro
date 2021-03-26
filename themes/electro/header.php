@@ -50,7 +50,14 @@
 				<?php echo get_search_form(); ?>
 			</div>
 			<div class="cart cell large-1 small-2 medium-1">
-				<a href="http://electro.local/cart/">
+			<?php 
+				/**
+				 * Retreiving WooCommerce Cart URL
+				 */
+				$cart_page_id = wc_get_page_id( 'cart' );
+				$cart_page_url = $cart_page_id ? get_permalink( $cart_page_id ) : '';
+			?>
+				<a href="<?php echo $cart_page_url ?>">
 					<div class="cart-icon">
 						<img src="<?php echo get_template_directory_uri();?>/assets/img/shopping-cart.png">
 						<div class="cart-count">
