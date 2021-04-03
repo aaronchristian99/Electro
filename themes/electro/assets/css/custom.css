@@ -32,13 +32,8 @@ body {
     background-color: #003da6;
 }
 
-.logo {
-    height: 5rem;
-}
-
 .logo img {
-    width: 75px;
-    height: 75px;
+    width: 150px;
 }
 
 #primary-menu li {

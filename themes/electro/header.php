@@ -43,7 +43,7 @@
 			</div>
 		</div>
 		<div class="logo-header grid-x align-middle align-spaced">
-			<div class="logo cell large-1 small-2 medium-1">
+			<div class="logo cell large-2 small-2 medium-2">
 				<?php the_custom_logo(); ?>
 			</div>
 			<div class="search cell large-4 medium-4 small-4">
